@@ -1,0 +1,91 @@
+@media (max-width: 1024px) {
+    #restaurant{
+        padding: 0 0;
+    }
+
+    /* --- NAV --- */
+    .header nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 70px;
+        padding: 0 16px;
+        width: 100%;
+        position: relative;
+    }
+
+    nav .logo img {
+        width: 80px;
+        height: auto;
+    }
+
+    /* show hamburger */
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 4px;
+        width: 32px;
+        height: 32px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        z-index: 20;
+    }
+
+    .hamburger span {
+        display: block;
+        height: 3px;
+        width: 100%;
+        border-radius: 999px;
+        background: #fff;
+        /* <-- BLANC maintenant */
+        transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    /* animation croix */
+    .hamburger.is-active span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .hamburger.is-active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.is-active span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
+    /* --- SIDEBAR MENU --- */
+
+    .navbar {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background: #121619;
+        box-shadow: 2px 0 12px rgba(0, 0, 0, 0.25);
+        max-width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 24px;
+        gap: 24px;
+        transform: translateX(-100%);
+        transition: transform 0.25s ease;
+
+    }
+
+    .navbar.nav-open {
+        transform: translateX(0);
+    }
+
+    .navbar a {
+        font-size: 22px;
+        padding: 6px 0;
+        color: #fff;
+    }
+}

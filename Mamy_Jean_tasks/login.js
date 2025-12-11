@@ -149,7 +149,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       if (isSignup) {
-        // ------- SIGN UP (créer compte SEULEMENT) -------
+        // ------- SIGN UP (only create an account) -------
         const users = getUsers();
         if (users.some((u) => u.email.toLowerCase() === email)) {
           showError("This email is already registered. Please log in.");
@@ -165,10 +165,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         saveUsers(users);
-
-
         showSuccess("Account created! You can now log in.");
-
         isSignup = false;
         updateModeUI();
 
@@ -187,7 +184,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         setCurrentUser(user.email);
-
         showSuccess("Login successful! Redirecting...");
         setTimeout(() => {
           window.location.href = "home_MamyJean.html";

@@ -1,6 +1,6 @@
 // settings_Mamyjean.js
 document.addEventListener("DOMContentLoaded", () => {
-  // ====== RÉCUPERER UTILISATEUR COURANT ======
+  // ====== Recover current user ======
   const users = JSON.parse(localStorage.getItem("users") || "[]");
   const currentEmail = localStorage.getItem("currentUserEmail");
 
@@ -27,12 +27,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const logoutButton = document.getElementById("logoutButton");
   const langButtons = document.querySelectorAll(".language-options button");
 
-  // Pré-remplir profil
+  // pre-filled profil
   if (fullNameInput) fullNameInput.value = user.name || "";
   if (emailInput) emailInput.value = user.email || "";
   if (nameHeading) nameHeading.textContent = user.name || "User";
 
-  // Langue
+  // Language
   let currentLang = user.lang || "en";
   langButtons.forEach((btn) => {
     const lang = btn.dataset.lang;
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Sauvegarder profil
+  // save profil
   if (saveProfileButton) {
     saveProfileButton.addEventListener("click", (e) => {
       e.preventDefault();
@@ -218,35 +218,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // panel par défaut = General
+  // panel by defaut
   showPanel("general");
 
-  // ====== HAMBURGER + NAV OVERLAY ======
-  const hamburger = document.getElementById("hamburger");
-  const navbar = document.querySelector(".navbar");
-  const navOverlay = document.getElementById("navOverlay");
-
-  if (hamburger && navbar && navOverlay) {
-    hamburger.addEventListener("click", () => {
-      navbar.classList.toggle("nav-open");
-      navOverlay.classList.toggle("show");
-      hamburger.classList.toggle("is-active");
-    });
-
-    navOverlay.addEventListener("click", () => {
-      navbar.classList.remove("nav-open");
-      navOverlay.classList.remove("show");
-      hamburger.classList.remove("is-active");
-    });
-
-    document.querySelectorAll(".navbar a").forEach((link) => {
-      link.addEventListener("click", () => {
-        navbar.classList.remove("nav-open");
-        navOverlay.classList.remove("show");
-        hamburger.classList.remove("is-active");
-      });
-    });
-  }
 });
 
 // ===== CLEAR ALL DATA (Privacy) =====

@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite</title>
+    <!--  font importor the foodlist and reservation -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="dea_favorite.css">
+    <link rel="stylesheet" href="../Mamy_Jean_tasks/style.css">
+    <link rel="stylesheet" href="../Mamy_Jean_tasks/header_responsive.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <div class="logo">
+                <img src="../images/logo.png" alt="">
+                <h1>La cuisine</h1>
+            </div>
+
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="navbar">
+                <a href="../Mamy_Jean_tasks/home_MamyJean.html">Home</a>
+                <a href="#about">About</a>
+                <a href="./dea_favorite.html"><i class="fa-solid fa-heart"></i> Favorite</a>
+                <a href="../Mamy_Jean_tasks/settings.html"><i class="fa-solid fa-circle-user"></i> Profile</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="nav-overlay" id="navOverlay"></div>
+
+
+    <main class="main">
+        <h1 class="title">Favorites</h1>
+
+        <!-- grid container applied -->
+        <div class="cards">
+            <!-- Indiv  card -->
+            <div class="card">
+                <img src="../images/foodlist/Frame 36.png" class="cardimg">
+                <div class="cardcontent">
+                    <h2 class="cardtitle">Lamb Satay</h2>
+                    <p class="cardcategory">Halal • Lamb</p>
+                    <!-- Star rate -->
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <span class="ratingtext">4.6 (500+)</span>
+                    </div>
+                    <!-- Rrmeove btn -->
+                    <button class="removebtn">❤ Remove Favorite</button>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="../images/foodlist/image 20.png" class="cardimg">
+                <div class="cardcontent">
+                    <h2 class="cardtitle">Beef Rendang</h2>
+                    <p class="cardcategory">Halal • Beef</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <span class="ratingtext">4.8 (900+)</span>
+                    </div>
+                    <button class="removebtn">❤ Remove Favorite</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../images/foodlist/Frame 4.png" class="cardimg">
+                <div class="cardcontent">
+                    <h2 class="cardtitle">Laksa</h2>
+                    <p class="cardcategory">Halal • Seafood • Spicy</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <span class="ratingtext">4.6 (500+)</span>
+                    </div>
+                    <button class="removebtn">❤ Remove Favorite</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../images/foodlist/Frame 37.png" class="cardimg">
+                <div class="cardcontent">
+                    <h2 class="cardtitle">Chicken Satay</h2>
+                    <p class="cardcategory">Halal • Chicken</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <span class="ratingtext">4.6 (500+)</span>
+                    </div>
+                    <button class="removebtn">❤ Remove Favorite</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-element">
+                <h1>La Cuisine</h1>
+                <p>Fresh and halal meals made easy</p>
+            </div>
+            <div class="footer-element">
+                <div class="link">
+                    <a href="">Home</a>
+                    <a href="">About</a>
+                    <a href="">Favorite</a>
+                    <a href="">Profile</a>
+                </div>
+            </div>
+            <div class="footer-element">
+                <p class="follow">Follow Us</p>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-tiktok"></i>
+                    <i class="fa-brands fa-youtube"></i>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="hr"></div>
+        <div class="copyright">
+            <p>&copy; 2025 LaCuisine. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../Mamy_Jean_tasks/humberger_Mamyjean.js"></script>
+
+</body>
+
+</html>

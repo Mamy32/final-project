@@ -1,0 +1,387 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodlist</title>
+    <!-- Importing font awsome fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <link rel="stylesheet" href="dea_foodlist.css">
+    <link rel="stylesheet" href="../Mamy_Jean_tasks/style.css">
+    <link rel="stylesheet" href="../Mamy_Jean_tasks/header_responsive.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <div class="logo">
+                <img src="../images/logo.png" alt="">
+                <h1>La cuisine</h1>
+            </div>
+
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="navbar">
+                <a href="../Mamy_Jean_tasks/home_MamyJean.html">Home</a>
+                <a href="#about">About</a>
+                <a href="./dea_favorite.html"><i class="fa-solid fa-heart"></i> Favorite</a>
+                <a href="../Mamy_Jean_tasks/settings.html"><i class="fa-solid fa-circle-user"></i> Profile</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <div class="restheader">
+        <div class="headbg"></div>
+        <div class="headoverlay"></div>
+        <div class="headcontent">
+            <!--logo -->
+            <div class="headl">
+                <img src="../images/foodlist/restaurant_logo.png">
+            </div>
+            <!-- info -->
+            <div class="headr">
+                <!-- res name + bookmark -->
+                <div class="headt">
+                    <h1>TransFoods</h1>
+                    <!-- Bookmark btn -->
+                    <button class="bookmarkbtn" id="bookmarkBtn">
+                        <img src="../images/Bookmark.png" id="bookmarkIcon">
+                    </button>
+                </div>
+                <!-- Rres desc -->
+                <div class="headbtm">
+                    <div class="desc">
+                        <h2>Description</h2>
+                        <p>TransFoods is an Indonesian halal restaurant that celebrates the rich flavors and warmth of
+                            Indonesia's culinary heritage. Our menu brings together classic dishes from across the
+                            archipelago, Each dish is made with fresh, halal-certified ingredients, cooked with love,
+                            and presented with a modern aura.</p>
+                    </div>
+                </div>
+                <!-- res adres -->
+                <div class="address">
+                    <img src="../images/Award.png">
+                    <div class="addresstxt">
+                        <h2>Adress</h2>
+                        <p>Menara Bank Mega Lantai 22. Jl.Kapten P. Tendean Kav.12-14A. Jakarta 12790, Indonesia. Email:
+                            Click Here. Phone: (021) 79187770 ext. 7231.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- whole body container-->
+        <div class="bodysection">
+            <div class="bodybg"></div>
+            <div class="bodyoverlay"></div>
+            <div class="bodycontent">
+                <!-- Ffilter -->
+                <div class="filter">
+                    <h2>Filters</h2>
+                    <h3>Spiciness</h3>
+                    <label>
+                        <input type="checkbox">
+                        Not Spicy
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        Medium
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        High
+                    </label>
+
+                    <!-- slider -->
+                    <h3>Price Range</h3>
+                    <input type="range" min="0" max="1000000" value="500000">
+                    <p class="range">0.00 IDR - 1,000,000.00 IDR</p>
+
+                    <h3>Food Type</h3>
+                    <label>
+                        <input type="checkbox">
+                        Rice
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        Soup
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        Dessert
+                    </label>
+
+                    <!-- controlss -->
+                    <div class="filterbtns">
+                        <button class="resetbtn">Reset</button>
+                        <button class="applybtn">Apply</button>
+                    </div>
+                </div>
+
+                <!-- Gcard grid -->
+                <div class="grid">
+                    <!-- indiv food cart -->
+                    <div class="card">
+                        <img src="../images/foodlist/image 17.png">
+                        <h3>Fried Chicken
+                            <!-- heart btn -->
+                            <button class="heartbtn">
+                                <img src="../images/Heart.png">
+                            </button>
+                        </h3>
+
+                        <!-- Food category -->
+                        <div class="tags">
+                            <span>Halal</span>
+                            <span>Chicken</span>
+                        </div>
+                        <p class="rating">
+                            <i class="starr"></i> 4.6 (500+)
+                        </p>
+                        <div class="cardbottom">
+                            <p class="price">IDR 60,000</p>
+                            <a href="../Jeff_tasks/food_details.html">
+                                <button>View Details</button>
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="../images/foodlist/Frame 35-1.png">
+                        <h3>Soto Ayam
+                            <button class="heartbtn">
+                                <img src="../images/Heart.png">
+                            </button>
+                        </h3>
+
+                        <div class="tags">
+                            <span>Halal</span>
+                            <span>Chicken</span>
+                        </div>
+                        <p class="rating">
+                            <i class="starr"></i> 4.6 (500+)
+                        </p>
+                        <div class="cardbottom">
+                            <p class="price">IDR 80,000</p>
+                            <a href="../Jeff_tasks/food_details.html">
+                                <button>View Details</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="../images/foodlist/image 20.png">
+                        <h3>Beef Rendang
+                            <button class="heartbtn">
+                                <img src="../images/Heart.png">
+                            </button>
+                        </h3>
+
+                        <div class="tags">
+                            <span>Halal</span>
+                            <span>Beef</span>
+                        </div>
+                        <p class="rating">
+                            <i class="starr"></i> 4.8 (900+)
+                        </p>
+                        <div class="cardbottom">
+                            <p class="price">IDR 160,000</p>
+                            <a href="../Jeff_tasks/food_details.html">
+                                <button>View Details</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="../images/foodlist/Frame 35.png">
+                        <h3>Ayam Gulai
+                            <button class="heartbtn">
+                                <img src="../images/Heart.png">
+                            </button>
+                        </h3>
+
+                        <div class="tags">
+                            <span>Halal</span>
+                            <span>Chicken</span>
+                            <span>Spicy</span>
+                        </div>
+                        <p class="rating">
+                            <i class="starr"></i> 4.6 (500+)
+                        </p>
+                        <div class="cardbottom">
+                            <p class="price">IDR 80,000</p>
+                            <a href="../Jeff_tasks/food_details.html">
+                                <button>View Details</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="../images/foodlist/Frame 4.png">
+                        <h3>Laksa
+                            <button class="heartbtn">
+                                <img src="../images/Heart.png">
+                            </button>
+                        </h3>
+
+                        <div class="tags">
+                            <span>Halal</span>
+                            <span>Seafood</span>
+                            <span>Spicy</span>
+                        </div>
+                        <p class="rating">
+                            <i class="starr"></i> 4.6 (500+)
+                        </p>
+                        <div class="cardbottom">
+                            <p class="price">IDR 75,000</p>
+                            <a href="../Jeff_tasks/food_details.html">
+                                <button>View Details</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="../images/foodlist/Frame 36.png">
+                        <h3>Lamb Satay
+                            <button class="heartbtn">
+                                <img src="../images/Heart.png">
+                            </button>
+                        </h3>
+
+                        <div class="tags">
+                            <span>Halal</span>
+                            <span>Lamb</span>
+                        </div>
+                        <p class="rating">
+                            <i class="starr"></i> 4.6 (500+)
+                        </p>
+                        <div class="cardbottom">
+                            <p class="price">IDR 50,000</p>
+                            <a href="../Jeff_tasks/food_details.html">
+                                <button>View Details</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="../images/foodlist/Frame 37.png">
+                        <h3>Chicken Satay
+                            <button class="heartbtn">
+                                <img src="../images/Heart.png">
+                            </button>
+                        </h3>
+
+                        <div class="tags">
+                            <span>Halal</span>
+                            <span>Chicken</span>
+                        </div>
+                        <p class="rating">
+                            <i class="starr"></i> 4.6 (500+)
+                        </p>
+                        <div class="cardbottom">
+                            <p class="price">IDR 60,000</p>
+                            <a href="../Jeff_tasks/food_details.html">
+                                <button>View Details</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="../images/foodlist/Frame 38.png">
+                        <h3>Siomay
+                            <button class="heartbtn">
+                                <img src="../images/Heart.png">
+                            </button>
+                        </h3>
+
+                        <div class="tags">
+                            <span>Halal</span>
+                            <span>Fish</span>
+                        </div>
+                        <p class="rating">
+                            <i class="starr"></i> 4.6 (500+)
+                        </p>
+                        <div class="cardbottom">
+                            <p class="price">IDR 50,000</p>
+                            <a href="../Jeff_tasks/food_details.html">
+                                <button>View Details</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="../images/foodlist/Frame 39.png">
+                        <h3>Nasi Kuning
+                            <button class="heartbtn">
+                                <img src="../images/Heart.png">
+                            </button>
+                        </h3>
+
+                        <div class="tags">
+                            <span>Halal</span>
+                            <span>Chicken</span>
+                            <span>Spicy</span>
+                        </div>
+                        <p class="rating">
+                            <i class="starr"></i> 4.6 (500+)
+                        </p>
+                        <div class="cardbottom">
+                            <p class="price">IDR 100,000</p>
+                            <a href="../Jeff_tasks/food_details.html">
+                                <button>View Details</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer  -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-element">
+                    <h1>La Cuisine</h1>
+                    <p>Fresh and halal meals made easy</p>
+                </div>
+                <div class="footer-element">
+                    <div class="link">
+                        <a href="../Mamy_Jean_tasks/home_MamyJean.html">Home</a>
+                        <a href="#about">About</a>
+                        <a href="./dea_favorite.html">Favorite</a>
+                        <a href="../Mamy_Jean_tasks/settings.html">Profile</a>
+                    </div>
+                </div>
+                <div class="footer-element">
+                    <p class="follow">Follow Us</p>
+                    <div class="icon">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-tiktok"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="hr"></div>
+            <div class="copyright">
+                <p>&copy; 2025 LaCuisine. All rights reserved.</p>
+            </div>
+        </footer>
+
+
+        <script src="dea_foodlist.js"></script>
+        <script src="../Mamy_Jean_tasks/humberger_Mamyjean.js"></script>
+</body>
+
+</html>

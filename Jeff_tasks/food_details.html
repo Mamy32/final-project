@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>food_details</title>
+    <link rel="stylesheet" href="food_details.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../Mamy_Jean_tasks/style.css">
+    <link rel="stylesheet" href="../Mamy_Jean_tasks/header_responsive.css">
+
+    <!-- La Cuisine Font -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+<!-- header -->
+
+    <header class="header">
+        <nav>
+            <div class="logo">
+                <img src="../images/logo.png" alt="">
+                <h1>La cuisine</h1>
+            </div>
+
+
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+
+            <div class="navbar">
+                <a href="../Mamy_Jean_tasks/home_MamyJean.html">Home</a>
+                <a href="#about">About</a>
+                <a href="../Dea_tasks/dea_favorite.html"><i class="fa-solid fa-heart"></i> Favorite</a>
+                <a href="../Mamy_Jean_tasks/settings.html"><i class="fa-solid fa-circle-user"></i>Profile</a>
+            
+            </div>
+        </nav>
+
+    </header>
+
+    <div class="nav-overlay" id="navOverlay"></div>
+
+<!-- 1/3rd top of the food details -->
+
+<main class="food-detail">
+    <section class="one-third-top">
+        <div class="card">
+            <div class="float-bar"> 
+                <img src="../images/image 8.png" alt="Nasi Goreng">
+            </div>
+            
+            <div class="details">
+                <h1>Nasi Goreng</h1>
+                <p class="pricing">IDR 70.000</p>
+
+                <p class="desc">
+                    Ingredient List:
+    Cooked white rice, chicken slices or shrimp, vegetable oil, sweet soy sauce (kecap manis), chili paste or sambal, garlic, shallots, salt, pepper, fried egg, sliced cucumber or pickles, fried shallots, green onions, lime wedge (optional), cabbage or other vegetables (optional), fish sauce or shrimp paste (optional), prawn crackers (optional)
+                </p>
+
+                <div class="tags">
+                    <span class="tag">Halal</span>
+                    <span class="tag-spicy">Spicy</span>
+                </div>
+
+                <div class="forms">
+                    <div class="fire-icon">
+                        <i class="fa-solid fa-pepper-hot active"></i>
+                        <i class="fa-solid fa-pepper-hot active"></i>
+                        <i class="fa-solid fa-pepper-hot"></i>
+                        <i class="fa-solid fa-pepper-hot"></i>
+                        <i class="fa-solid fa-pepper-hot"></i>
+                    </div>
+                </div>
+
+                <div class="forms">
+                    <label>Quantity</label>
+                    <div class="quantity-selector">
+                        <button class="minus-button">-</button>
+                        <span class="amount">1</span>
+                        <button class="plus-button">+</button>
+                    </div>
+                </div>
+
+                <div class="forms">
+                    <button class="order-button">Order</button>
+                </div>
+
+                <div class="forms">
+                    <label for="notes">Notes</label>
+                    <textarea id="notes" placeholder="Insert Notes..."></textarea>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- order popup -->
+    <div class="order-popup-overlay" id="order-popup">
+        <div class="order-popup">
+            <span class="close-popup" id="close-popup">&times;</span>
+
+            <h2>Order Placed!</h2>
+            <p>Your Order is Sent Into The Kitchen</p>
+
+            <button class="open-bill-btn" id="open-bill-button">See Ordered Items</button>
+        </div>
+    </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const orderButton   = document.querySelector(".order-button");
+    const popupOverlay  = document.getElementById("order-popup");
+    const closePopup    = document.getElementById("close-popup");
+    const openBillBtn   = document.getElementById("open-bill-button");
+
+    orderButton.addEventListener("click", () => {
+        const name     = document.querySelector(".details h1").textContent.trim();
+        const price    = document.querySelector(".pricing").textContent.trim();
+        const quantity = parseInt(document.querySelector(".amount").textContent.trim(), 10);
+        const notes    = document.getElementById("notes").value.trim() || "No notes";
+        const imageSrc = document.querySelector(".float-bar img").getAttribute("src");
+
+        const order = {
+            name: name,
+            price: price,
+            quantity: quantity,
+            notes: notes,
+            imageSrc: imageSrc,
+            status: "Processing"
+        };
+
+        const existingOrders = JSON.parse(localStorage.getItem("orders") || "[]");
+        existingOrders.push(order);
+        localStorage.setItem("orders", JSON.stringify(existingOrders));
+
+        popupOverlay.style.display = "flex";
+    });
+
+    closePopup.addEventListener("click", () => {
+        popupOverlay.style.display = "none";
+    });
+
+    popupOverlay.addEventListener("click", (e) => {
+        if (e.target === popupOverlay) {
+            popupOverlay.style.display = "none";
+        }
+    });
+
+    openBillBtn.addEventListener("click", () => {
+        window.location.href = "./ordered_page.html";
+    });
+});
+</script>
+
+
+    <!-- middle most ordered section -->
+    <div class="most-ordered-n-review-bg">
+        <section class="most-ordered">
+            <div class="most-ordered-cards">
+                <h2 class="most-ordered-title">Most Ordered</h2>
+
+                <div class="popular-dish-cards">
+                    <article class="dish-cards">
+                        <img src="../images/image 9.png" alt="Nasi Goreng Kecap">
+                        <h3>Nasi Goreng Kecap</h3>
+                        <p> Rice fried with various toppings...</p>
+
+                        <div class="dish-tag">
+                            <span class="tag">Halal</span>
+                            <span class="tag">Chicken</span>
+                        </div>
+
+                        <div class="dish-rating">
+                            <span class="rating">
+                                <i class="fa-regular fa-star"></i> 4.3 (501+)
+                            </span>
+                        </div>
+                    </article>
+
+                    <article class="dish-cards">
+                        <img src="../images/image 10.png" alt="Rawon Daging Sapi">
+                        <h3>Rawon Daging Sapi</h3>
+                        <p>Beed braised in a rich soup...</p>
+
+                        <div class="dish-tag">
+                            <span class="tag">Halal</span>
+                            <span class="tag">Beef</span>
+                        </div>
+
+                        <div class="dish-rating">
+                            <span class="rating">
+                                <i class="fa-regular fa-star"></i> 4.7 (100+)
+                            </span>
+                        </div>
+                    </article>
+
+                    <article class="dish-cards">
+                        <img src="../images/image 11.png" alt="Nasi Campur">
+                        <h3>Nasi Campur</h3>
+                        <p>Rice cooked with coconut cream...</p>
+
+                        <div class="dish-tag">
+                            <span class="tag">Halal</span>
+                            <span class="tag">Beef</span>
+                        </div>
+
+                        <div class="dish-rating">
+                            <span class="rating">
+                                <i class="fa-regular fa-star"></i> 4.1 (747+)
+                            </span>
+                        </div>
+                    </article>
+
+                    <article class="dish-cards">
+                        <img src="../images/image 12.png" alt="Tempe Orek">
+                        <h3>Tempe Orek</h3>
+                        <p>Fermented soybeans cooked in sauce...</p>
+
+                        <div class="dish-tag">
+                            <span class="tag">Halal</span>
+                            <span class="tag">Vegeterian</span>
+                        </div>
+
+                        <div class="dish-rating">
+                            <span class="rating">
+                                <i class="fa-regular fa-star"></i> 4.1 (380+)
+                            </span>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </section>
+
+    <!-- bottom review area-->
+
+        <section class="reviews">
+            <h2 class="reviews-title">Last Reviews</h2>
+
+            <div class="reviews-area">
+                <article class="review-card">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+
+                    <h3>Explosion of Flavor</h3>
+                    <p>"Tasty and well-seasoned fried rice. Portion size was just right and served warm"</p>
+                    <div class="reviewer-acc">
+                        <div class="user">
+                            <img class="reviewer-pfp" src="../images/29e8ddefd7fd94b32e77c06716a78b1d (1).jpg" alt="User Avatar">
+                            <div class="user-info">
+                                <span class="reviewer-name">Denji</span>
+                                <span class="review-date">October 16, 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="review-card">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+
+                    <h3>Good but a bit spicy</h3>
+                    <p>"The nasi goreng is flavourful, though the sambal was quite hot for me."</p>
+                    <div class="reviewer-acc">
+                        <div class="user">
+                            <img class="reviewer-pfp" src="../images/9dde31869bbbf6b2ca15cafffce9f38e.jpg" alt="User Avatar">
+                            <div class="user-info">
+                                <span class="reviewer-name">Conan</span>
+                                <span class="review-date">October 17, 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="review-card">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <h3>Nice traditional taste</h3>
+                    <p>"It's nice and cheap. I love it. The nasi goreng reminds me of my hometown."</p>
+                    <div class="reviewer-acc">
+                        <div class="user">
+                            <img class="reviewer-pfp" src="../images/54cd7a8b16504a5c364b93b957c11a7a.jpg" alt="User Avatar">
+                            <div class="user-info">
+                                <span class="reviewer-name">Toji</span>
+                                <span class="review-date">October 18, 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+            </div>
+        </section>
+    </div>
+</main>
+
+
+    <!-- footer -->
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-element">
+                <h1>La Cuisine</h1>
+                <p>Fresh and halal meals made easy</p>
+            </div>
+            <div class="footer-element">
+                <div class="link">
+                    <a href="../Mamy_Jean_tasks/home_MamyJean.html">Home</a>
+                    <a href="">About</a>
+                    <a href="../Dea_tasks/dea_favorite.html">Favorite</a>
+                    <a href="../Mamy_Jean_tasks/settings.html">Profile</a>
+                </div>
+            </div>
+            <div class="footer-element">
+                <p class="follow">Follow Us</p>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-tiktok"></i>
+                    <i class="fa-brands fa-youtube"></i>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="hr"></div>
+        <div class="copyright">
+            <p>&copy; 2025 LaCuisine. All rights reserved.</p>
+        </div>
+    </footer>
+
+<script src="style.js"></script>
+<script src="../Mamy_Jean_tasks/humberger_Mamyjean.js"></script>
+</body>
+</html>

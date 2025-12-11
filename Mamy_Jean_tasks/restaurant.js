@@ -10,7 +10,7 @@ const halalRestaurants = [{
         reviews: 820,
         address: "Jl. Melati No.12, Tebet, Jakarta Selatan",
         city: "Jakarta",
-        image: "./images/resto1.jpg"
+        image: "../images/resto1.jpg"
     },
     {
         name: "Sate Madina",
@@ -19,7 +19,7 @@ const halalRestaurants = [{
         reviews: 1340,
         address: "Jl. KH. Hasyim Ashari No.21, Jakarta Pusat",
         city: "Jakarta",
-        image: "./images/resto2.jpg"
+        image: "../images/resto2.jpg"
     },
     {
         name: "Ayam Bakar Barokah",
@@ -28,7 +28,7 @@ const halalRestaurants = [{
         reviews: 960,
         address: "Jl. Raya Pasar Minggu No.88, Jakarta Selatan",
         city: "Jakarta",
-        image: "./images/resto3.jpg"
+        image: "../images/resto3.jpg"
     },
     {
         name: "Resto Keluarga Al-Iman",
@@ -37,7 +37,7 @@ const halalRestaurants = [{
         reviews: 540,
         address: "Jl. Cempaka Putih No.7, Jakarta Pusat",
         city: "Jakarta",
-        image: "./images/resto4.jpg"
+        image: "../images/resto4.jpg"
     },
     {
         name: "Nasi Uduk Haramain",
@@ -46,7 +46,7 @@ const halalRestaurants = [{
         reviews: 430,
         address: "Jl. Mangga Dua Raya No.34, Jakarta Utara",
         city: "Jakarta",
-        image: "./images/resto5.jpg"
+        image: "../images/resto5.jpg"
     },
     {
         name: "Dapur Selera Muslim",
@@ -55,7 +55,7 @@ const halalRestaurants = [{
         reviews: 1520,
         address: "Jl. Ahmad Yani No.56, Jakarta Timur",
         city: "Jakarta",
-        image: "./images/resto6.jpg"
+        image: "../images/resto6.jpg"
     },
     {
         name: "Lesehan Halal Corner",
@@ -64,7 +64,7 @@ const halalRestaurants = [{
         reviews: 370,
         address: "Jl. Cipete Raya No.15, Jakarta Selatan",
         city: "Jakarta",
-        image: "./images/resto7.jpg"
+        image: "../images/resto7.jpg"
     },
     {
         name: "Rujak Kalimalang",
@@ -73,7 +73,7 @@ const halalRestaurants = [{
         reviews: 290,
         address: "Jl. Raya Kalimalang No.101, Jakarta Timur",
         city: "Jakarta",
-        image: "./images/resto8.jpg"
+        image: "../images/resto8.jpg"
     },
     {
         name: "Halal Street Bites",
@@ -82,7 +82,7 @@ const halalRestaurants = [{
         reviews: 680,
         address: "Jl. Tomang Raya No.33, Jakarta Barat",
         city: "Jakarta",
-        image: "./images/resto9.jpg"
+        image: "../images/resto9.jpg"
     },
     {
         name: "Kedai Soto Syariah",
@@ -91,7 +91,7 @@ const halalRestaurants = [{
         reviews: 410,
         address: "Jl. Fatmawati No.60, Jakarta Selatan",
         city: "Jakarta",
-        image: "./images/resto10.jpg"
+        image: "../images/resto10.jpg"
     },
     {
         name: "Gudeg Jogja Halal",
@@ -100,7 +100,7 @@ const halalRestaurants = [{
         reviews: 520,
         address: "Jl. Matraman Raya No.47, Jakarta Timur",
         city: "Jakarta",
-        image: "./images/resto11.jpg"
+        image: "../images/resto11.jpg"
     },
     {
         name: "Sop Buntut Rahmah",
@@ -109,7 +109,7 @@ const halalRestaurants = [{
         reviews: 890,
         address: "Jl. Gatot Subroto No.19, Jakarta Selatan",
         city: "Jakarta",
-        image: "./images/resto12.jpg"
+        image: "../images/resto12.jpg"
     },
 ];
 
@@ -122,7 +122,7 @@ const veganRestaurants = [{
         reviews: 720,
         address: "Jl. Panglima Polim V No.22, Jakarta Selatan",
         city: "Jakarta",
-        image: "./images/resto13.jpg"
+        image: "../images/resto13.jpg"
     },
     {
         name: "Plant Power Kitchen",
@@ -131,7 +131,7 @@ const veganRestaurants = [{
         reviews: 650,
         address: "Jl. Tebet Dalam No.15, Jakarta Selatan",
         city: "Jakarta",
-        image: "./images/resto14.jpg"
+        image: "../images/resto14.jpg"
     },
     {
         name: "Herbivore Haven",
@@ -140,7 +140,7 @@ const veganRestaurants = [{
         reviews: 530,
         address: "Jl. Gunawarman No.50, Jakarta Selatan",
         city: "Jakarta",
-        image: "./images/resto15.jpg"
+        image: "../images/resto15.jpg"
     },
     {
         name: "Rainbow Bowl Bar",
@@ -149,7 +149,7 @@ const veganRestaurants = [{
         reviews: 410,
         address: "Jl. Danau Sunter Utara No.33, Jakarta Utara",
         city: "Jakarta",
-        image: "./images/resto16.jpg"
+        image: "../images/resto16.jpg"
     },
     {
         name: "Pure Earth Cafe",
@@ -158,7 +158,7 @@ const veganRestaurants = [{
         reviews: 980,
         address: "Jl. Antasari No.21, Jakarta Selatan",
         city: "Jakarta",
-        image: "./images/resto17.jpg"
+        image: "../images/resto17.jpg"
     },
     {
         name: "Jakarta Vegan House",
@@ -167,7 +167,7 @@ const veganRestaurants = [{
         reviews: 360,
         address: "Jl. Wijaya II No.17, Jakarta Selatan",
         city: "Jakarta",
-        image: "./images/resto18.jpg"
+        image: "../images/resto18.jpg"
     },
     {
         name: "Happy Herb Cafe",
@@ -176,7 +176,7 @@ const veganRestaurants = [{
         reviews: 295,
         address: "Jl. Cikini Raya No.6, Jakarta Pusat",
         city: "Jakarta",
-        image: "./images/resto19.jpg"
+        image: "../images/resto19.jpg"
     },
     {
         name: "Vegan & Co.",
@@ -185,7 +185,7 @@ const veganRestaurants = [{
         reviews: 540,
         address: "Jl. Kelapa Nias No.3, Jakarta Utara",
         city: "Jakarta",
-        image: "./images/resto20.jpg"
+        image: "../images/resto20.jpg"
     },
     {
         name: "Soul Plant Eatery",
@@ -194,7 +194,7 @@ const veganRestaurants = [{
         reviews: 610,
         address: "Jl. Radio Dalam No.40, Jakarta Selatan",
         city: "Jakarta",
-        image: "./images/resto21.jpg"
+        image: "../images/resto21.jpg"
     },
     {
         name: "Roots & Sprouts",
@@ -203,7 +203,7 @@ const veganRestaurants = [{
         reviews: 505,
         address: "Jl. Senopati No.45, Jakarta Selatan",
         city: "Jakarta",
-        image: "./images/resto22.jpg"
+        image: "../images/resto22.jpg"
     },
     {
         name: "Vegan Urban Kitchen",
@@ -212,7 +212,7 @@ const veganRestaurants = [{
         reviews: 430,
         address: "Jl. Kota Kasablanka No.2, Jakarta Selatan",
         city: "Jakarta",
-        image: "./images/resto23.jpg"
+        image: "../images/resto23.jpg"
     },
     {
         name: "Green Harmony Diner",
@@ -221,7 +221,7 @@ const veganRestaurants = [{
         reviews: 310,
         address: "Jl. Gajah Mada No.15, Jakarta Barat",
         city: "Jakarta",
-        image: "./images/resto24.jpg"
+        image: "../images/resto24.jpg"
     },
 ];
 
@@ -234,7 +234,7 @@ const nonHalalRestaurants = [{
         reviews: 1120,
         address: "Jl. Pluit Karang Indah No.9, Jakarta Utara",
         city: "Jakarta",
-        image: "./images/resto25.jpg"
+        image: "../images/resto25.jpg"
     },
     {
         name: "Bacon Bros Diner",
@@ -243,7 +243,7 @@ const nonHalalRestaurants = [{
         reviews: 860,
         address: "Jl. Kelapa Gading Boulevard No.25, Jakarta Utara",
         city: "Jakarta",
-        image: "./images/resto26.jpg"
+        image: "../images/resto26.jpg"
     },
     {
         name: "Tokyo Tonkatsu Bar",
@@ -252,7 +252,7 @@ const nonHalalRestaurants = [{
         reviews: 960,
         address: "Jl. Senayan City Mall L3, Jakarta Selatan",
         city: "Jakarta",
-        image: "./images/resto27.jpg"
+        image: "../images/resto27.jpg"
     },
     {
         name: "The Wine Cellar Bistro",
@@ -261,7 +261,7 @@ const nonHalalRestaurants = [{
         reviews: 730,
         address: "Jl. MH Thamrin No.9, Jakarta Pusat",
         city: "Jakarta",
-        image: "./images/resto28.jpg"
+        image: "../images/resto28.jpg"
     },
     {
         name: "Ribs & Co Smokehouse",
@@ -270,7 +270,7 @@ const nonHalalRestaurants = [{
         reviews: 1340,
         address: "Jl. Ampera Raya No.14, Jakarta Selatan",
         city: "Jakarta",
-        image: "./images/resto29.jpg"
+        image: "../images/resto29.jpg"
     },
     {
         name: "Sausage Garden",
@@ -279,7 +279,7 @@ const nonHalalRestaurants = [{
         reviews: 590,
         address: "Jl. Boulevard Barat Raya No.5, Jakarta Utara",
         city: "Jakarta",
-        image: "./images/resto30.jpg"
+        image: "../images/resto30.jpg"
     },
     {
         name: "Beer & Bites Gastropub",
@@ -288,7 +288,7 @@ const nonHalalRestaurants = [{
         reviews: 780,
         address: "Jl. Gatot Subroto No.36, Jakarta Selatan",
         city: "Jakarta",
-        image: "./images/resto31.jpg"
+        image: "../images/resto31.jpg"
     },
     {
         name: "La Porchetta Trattoria",
@@ -297,7 +297,7 @@ const nonHalalRestaurants = [{
         reviews: 640,
         address: "Jl. PIK No.88, Jakarta Utara",
         city: "Jakarta",
-        image: "./images/resto32.jpg"
+        image: "../images/resto32.jpg"
     },
     {
         name: "Tapas y Jamón",
@@ -306,7 +306,7 @@ const nonHalalRestaurants = [{
         reviews: 520,
         address: "Jl. Cipete Raya No.27, Jakarta Selatan",
         city: "Jakarta",
-        image: "./images/resto33.jpg"
+        image: "../images/resto33.jpg"
     },
     {
         name: "Steakhouse 88",
@@ -315,7 +315,7 @@ const nonHalalRestaurants = [{
         reviews: 910,
         address: "Jl. Kuningan City No.5, Jakarta Selatan",
         city: "Jakarta",
-        image: "./images/resto34.jpg"
+        image: "../images/resto34.jpg"
     },
     {
         name: "BBQ Smoke & Brew",
@@ -324,7 +324,7 @@ const nonHalalRestaurants = [{
         reviews: 640,
         address: "Jl. Kemang Raya No.30, Jakarta Selatan",
         city: "Jakarta",
-        image: "./images/resto35.jpg"
+        image: "../images/resto35.jpg"
     },
     {
         name: "Pork Rib Shack",
@@ -333,7 +333,7 @@ const nonHalalRestaurants = [{
         reviews: 570,
         address: "Jl. Hayam Wuruk No.11, Jakarta Barat",
         city: "Jakarta",
-        image: "./images/resto36.jpg"
+        image: "../images/resto36.jpg"
     },
 ];
 
@@ -381,8 +381,13 @@ function createRestaurantCard(resto) {
     <p class="adress">${resto.address}</p>
 
     <div class="btn">
-        <button>View Menu</button>
-        <button>Reserve Table</button>
+        <button onclick="window.location.href='../Dea_tasks/dea_foodlist.html'">
+                View Menu
+        </button>
+        <button onclick="window.location.href='../Dea_tasks/reservation_dea.html'">
+                Reserve Table
+        </button>
+    
     </div>
     </div>
 `;
@@ -455,21 +460,30 @@ const searchBtn = document.getElementById("restaurantSearchBtn");
 function filterRestaurants() {
     const q = searchInput.value.trim().toLowerCase();
 
+    // if empty → show HALAL
     if (!q) {
-        renderList([]);
+        renderList(halalRestaurants);
         return;
     }
 
     let filtered = [];
 
-    if (q.includes("vegan")) filtered = veganRestaurants;
-    else if (q.includes("non")) filtered = nonHalalRestaurants;
-    else if (q.includes("halal")) filtered = halalRestaurants;
-
-    else filtered = [];
+    if (q.includes("vegan")) {
+        filtered = veganRestaurants;
+    }
+    else if (q.includes("non") || q.includes("non-halal") || q.includes("non halal")) {
+        filtered = nonHalalRestaurants;
+    }
+    else if (q.includes("halal")) {
+        filtered = halalRestaurants;
+    }
+    else {
+        filtered = [];
+    }
 
     renderList(filtered);
 }
+
 
 searchBtn.addEventListener("click", filterRestaurants);
 
@@ -477,38 +491,7 @@ searchInput.addEventListener("keydown", (e) => {
     if (e.key === "Enter") filterRestaurants();
 });
 
-
-// ======================================================
-// =============== SIDEBAR MOBILE =======================
-// ======================================================
-const hamburger = document.getElementById("hamburger");
-const navbar = document.querySelector(".navbar");
-const navOverlay = document.getElementById("navOverlay");
-
-if (hamburger && navbar && navOverlay) {
-    hamburger.addEventListener("click", () => {
-        navbar.classList.toggle("nav-open");
-        navOverlay.classList.toggle("show");
-        hamburger.classList.toggle("is-active");
-    });
-
-    navOverlay.addEventListener("click", () => {
-        navbar.classList.remove("nav-open");
-        navOverlay.classList.remove("show");
-        hamburger.classList.remove("is-active");
-    });
-
-    document.querySelectorAll(".navbar a").forEach(link => {
-        link.addEventListener("click", () => {
-            navbar.classList.remove("nav-open");
-            navOverlay.classList.remove("show");
-            hamburger.classList.remove("is-active");
-        });
-    });
-}
-
-
 // ======================================================
 // =============== INITIAL EMPTY RENDER =================
 // ======================================================
-renderList([]);
+renderList(halalRestaurants);

@@ -1,0 +1,124 @@
+﻿
+
+* {
+  margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+
+/* main body*/
+body {
+	font-family: 'Poppins', Arial, sans-serif;
+  background-color: #121619;
+    color: white;
+    min-height: 1000px;
+	position: relative;
+}
+
+/* overlay */
+.overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(18, 22, 25, 0.3);
+}
+
+
+
+/* the main content */
+.main {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 180px 80px 60px;
+    position: relative;
+}
+
+.title {
+    font: italic 48px Arial;
+    margin-bottom: 50px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+}
+
+/* fod card style */
+.cardimg {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.cardcontent {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.cardtitle {
+    font: bold 24px Arial;
+    color: black;
+}
+
+.cardcategory {
+    font: 14px Arial;
+    color: #666;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 5px;
+}
+
+.rating i {
+    font-size: 16px;
+    color: #FFAE00;
+}
+
+/* Rate style */
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.rating i {
+    color: #ffc107;
+    font-size: 18px;
+}
+
+.ratingtext {
+    font: 14px Arial;
+    color: #333;
+}
+
+/* Rrmeove btn */
+.removebtn {
+    background: none;
+    border: none;
+    color: #ff6b6b;
+    font: 14px Arial;
+    cursor: pointer;
+    padding: 8px 0;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.removebtn:hover {
+    color: #ff4444;
+}
+
+
+

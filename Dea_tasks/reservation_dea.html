@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Reservation Table</title>
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+	<link rel="stylesheet" href="reservation_dea.css">
+	<link rel="stylesheet" href="../Mamy_Jean_tasks/style.css">
+	<link rel="stylesheet" href="../Mamy_Jean_tasks/header_responsive.css">
+</head>
+<body>
+
+	<div class="bg">
+		<img src="../images/f1ea2237e51a6314b32b5377e884a32c (1).jpg">
+	</div>
+
+    <!-- HEADER -->
+    <header class="header">
+        <nav>
+            <div class="logo">
+                <img src="../images/logo.png" alt="">
+                <h1>La cuisine</h1>
+            </div>
+
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="navbar">
+                <a href="../Mamy_Jean_tasks/home_MamyJean.html">Home</a>
+                <a href="#about">About</a>
+                <a href="./dea_favorite.html"><i class="fa-solid fa-heart"></i> Favorite</a>
+                <a href="../Mamy_Jean_tasks/settings.html"><i class="fa-solid fa-circle-user"></i> Profile</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="nav-overlay" id="navOverlay"></div>
+
+
+	<main class="main">
+	
+		<div class="lftsec">
+			<img src="../images/c8521d92ff967732e01ec202c3e50a23 (1).jpg" class="resimg">
+			<!-- Restaurant info -->
+			<div class="resinfo">
+				<h2>Taberu Restaurant</h2>
+				<p>Japanese</p>
+				<p>Jl. Diponegoro No.23, Cihapit, Bandung, Jawa Barat 40114</p>
+			</div>
+			<!-- Date  -->
+			<div class="formGrp">
+				<label>Date (dd/mm/yyyy)</label>
+				<input type="date" id="resDate" name="reservation_date">
+			</div>
+			<!-- Time  -->
+			<div class="formGrp">
+				<label>Time (00:00)</label>
+				<input type="time" id="resTime" name="reservation_time">
+			</div>
+		</div>
+		<!-- Right part-->
+		<div class="rightsec">
+			<h2>Taberu Restaurant</h2>
+			<form id="reservationForm">
+				<div class="formGrp">
+					<label>Full Name</label>
+					<input type="text" id="fullNameInput" placeholder="Enter your name" required>
+				</div>
+				<div class="formGrp">
+					<label>Phone Number</label>
+					<input type="tel" id="phoneInput" placeholder="Enter phone number" required>
+				</div>
+				<div class="formGrp">
+					<label>Party Size</label>
+					<select id="partySizeSelect" required>
+						<option value="">Select party size</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5+">5+</option>
+					</select>
+				</div>
+				<div class="formGrp">
+					<label>VIP Room (Optional)</label>
+					<select id="vipRoomSelect">
+						<option value="no">No</option>
+						<option value="yes">Yes</option>
+					</select>
+				</div>
+				<!-- Email -->
+				<div class="formGrp">
+					<label>Email</label>
+					<input type="email" id="emailInput" placeholder="jhondoe@example.com">
+				</div>
+				<!-- Special requests -->
+				<div class="formGrp">
+					<label>Special Requests (Optional)</label>
+					<textarea id="specialRequestsInput" placeholder="Enter special requests"></textarea>
+				</div>
+				<!-- Submit btn-->
+				<button type="submit" class="submitBtn">Confirm Reservation</button>
+			</form>
+		</div>
+	</main>
+	
+<footer>
+    <div class="footer-content">
+        <div class="footer-element">
+            <h1>La Cuisine</h1>
+            <p>Fresh and halal meals made easy</p>
+        </div>
+        <div class="footer-element">
+            <div class="link">
+                <a href="./home_MamyJean.html">Home</a>
+                <a href="#about">About</a>
+                <a href="../Dea_tasks/dea_favorite.html">Favorite</a>
+                <a href="./settings.html">Profile</a>
+            </div>
+        </div>
+        <div class="footer-element">
+            <p class="follow">Follow Us</p>
+            <div class="icon">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-tiktok"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+        </div>
+    </div>
+    <div class="hr"></div>
+    <div class="copyright">
+        <p>&copy; 2025 LaCuisine. All rights reserved.</p>
+    </div>
+</footer>
+
+
+	<script src="reservation_dea.js"></script>
+	<script src="../Mamy_Jean_tasks/humberger_Mamyjean.js"></script>
+</body>
+</html>
+

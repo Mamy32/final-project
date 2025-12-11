@@ -1,0 +1,804 @@
+﻿/* lbase layour */
+* {
+  margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+}
+
+/* Main layout */
+
+
+/* Restaurant header section with background */
+.restheader {
+    background-color: #eabd4d;
+    height: 394px;
+    position: relative;
+    border: 1px solid black;
+    width: 100%;
+    
+}
+
+.headbg {
+    background-image: url('../images/foodlist/header_bg.png');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.headoverlay {
+    background-color: rgba(0, 0, 0, 0.69);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.headcontent {
+    position: relative;
+    height: 100%;
+    display: flex;
+}
+
+.headl {
+    width: 404px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.headl img {
+    width: 248px;
+    height: 251px;
+}
+
+.headr {
+    flex: 1;
+    position: relative;
+    padding: 18px 442px 0 10px;
+}
+
+.headt {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+.headt h1 {
+    font-size: 64px;
+    font-weight: 600;
+    color: #ebebeb;
+    margin: 0;
+}
+
+.bookmarkbtn {
+    width: 48px;
+    height: 48px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bookmarkbtn img {
+    width: 32px;
+    height: 32px;
+}
+
+.desc h2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.desc p {
+    font-size: 20px;
+    font-weight: normal;
+    color: white;
+    line-height: 1.5;
+    max-width: 489px;
+}
+
+.address {
+    position: absolute;
+    right: 0;
+    top: 107px;
+    width: 442px;
+    padding: 0 59px;
+    display: flex;
+    gap: 5px;
+}
+
+.address i {
+    font-size: 40px;
+    color: white;
+    margin-top: 5px;
+}
+
+.address img {
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+}
+
+.addresstxt {
+    flex: 1;
+}
+
+.addresstxt h2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.addresstxt p {
+    font-size: 20px;
+    font-weight: normal;
+    color: white;
+    line-height: 1.4;
+}
+
+.bodysection {
+    background-color: #121619;
+    position: relative;
+    width: 100%;
+}
+
+/* Body section bg */
+.bodybg {
+    background-image: url('../images/foodlist/body_bg.png');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bodyoverlay {
+    background-color: rgba(0, 0, 0, 0.75);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bodycontent {
+    position: relative;
+    min-height: 1255px;
+    padding: 40px 80px;
+    display: flex;
+    gap: 40px;
+}
+
+/* Filter  */
+.filter {
+    width: 360px;
+    background-color: rgba(255, 255, 255, 0.14);
+    border-radius: 32px;
+    padding: 30px 35px;
+    position: relative;
+}
+
+.filter h2 {
+    font-size: 64px;
+    font-weight: 500;
+    margin-bottom: 55px;
+}
+
+.filter h3 {
+    font-size: 36px;
+    font-weight: 500;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+.filter label {
+    display: block;
+    font-size: 32px;
+    font-weight: normal;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.filter input[type="checkbox"] {
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+    border: 1px solid white;
+    background-color: white;
+    vertical-align: middle;
+}
+
+.filter input[type="range"] {
+    width: 100%;
+    margin: 20px 0 10px 0;
+}
+
+.range {
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.filterbtns {
+    margin-top: 50px;
+    display: flex;
+    gap: 19px;
+}
+/* Filter btns */
+.resetbtn,
+.applybtn {
+    width: 165px;
+    height: 54px;
+    border-radius: 21px;
+    font-size: 32px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.resetbtn {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+}
+
+.applybtn {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+}
+
+.resetbtn:hover,
+.applybtn:hover {
+    opacity: 0.9;
+}
+
+/* Food items grid */
+.grid {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 30px;
+    align-content: flex-start;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.17);
+    border-radius: 24px;
+    padding: 20px;
+    width: 280px;
+    position: relative;
+}
+
+/* Food card  img*/
+.card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 16px;
+    margin-bottom: 12px;
+}
+
+.card h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.heartbtn {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 28px;
+    height: 28px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+    flex-shrink: 0;
+}
+
+.heartbtn img {
+    width: 100%;
+    height: 100%;
+}
+
+.card .desc {
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.tags {
+    margin-bottom: 10px;
+}
+
+.tags span {
+    display: inline-block;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    background-color: #ebebeb;
+    color: #424242;
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.rating {
+    font-size: 14px;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.rating i {
+    display: inline-block;
+    font-size: 15px;
+    color: #FFAE00;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.cardbottom {
+    padding-top: 8px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+}
+
+.cardbottom button {
+    background-color: #1459da;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.cardbottom button:hover {
+    background-color: #0f47b3;
+}
+
+
+@media (max-width: 1024px) {
+    body {
+        min-width: 100%;
+    }
+
+    .header nav {
+        padding: 0 40px;
+        height: 100px;
+    }
+
+    .logo img {
+        width: 90px;
+        height: 55px;
+    }
+
+    .logo h1 {
+        font-size: 28px;
+    }
+
+    .navbar {
+        gap: 24px;
+    }
+
+    .navbar a {
+        font-size: 24px;
+    }
+
+    .navbar a i {
+        font-size: 20px;
+    }
+
+    .restheader {
+        margin-top: 100px;
+        height: 350px;
+    }
+
+    .headl {
+        width: 300px;
+    }
+
+    .headl img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .headr {
+        padding: 15px 300px 0 10px;
+    }
+
+    .headt h1 {
+        font-size: 48px;
+    }
+
+    .bookmarkbtn {
+        width: 40px;
+        height: 40px;
+    }
+
+    .bookmarkbtn img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .desc h2 {
+        font-size: 28px;
+    }
+
+    .desc p {
+        font-size: 18px;
+        max-width: 400px;
+    }
+
+    .address {
+        width: 350px;
+        padding: 0 40px;
+        top: 90px;
+    }
+
+    .address i {
+        font-size: 32px;
+    }
+
+    .addresstxt h2 {
+        font-size: 28px;
+    }
+
+    .addresstxt p {
+        font-size: 18px;
+    }
+
+    .bodycontent {
+        padding: 30px 40px;
+        gap: 30px;
+    }
+
+    .filter {
+        width: 300px;
+        padding: 25px 30px;
+    }
+
+    .filter h2 {
+        font-size: 52px;
+        margin-bottom: 40px;
+    }
+
+    .filter h3 {
+        font-size: 30px;
+        margin-top: 28px;
+    }
+
+    .filter label {
+        font-size: 26px;
+    }
+
+    .filter input[type="checkbox"] {
+        width: 30px;
+        height: 30px;
+    }
+
+    .range {
+        font-size: 20px;
+    }
+
+    .resetbtn,
+    .applybtn {
+        width: 140px;
+        height: 48px;
+        font-size: 26px;
+    }
+
+    .grid {
+        gap: 30px 20px;
+    }
+
+    .card {
+        width: 240px;
+        padding: 16px;
+    }
+
+    .card img {
+        height: 170px;
+    }
+
+    .card h3 {
+        font-size: 20px;
+    }
+
+    .tags span {
+        font-size: 10px;
+        padding: 4px 10px;
+    }
+
+    .rating {
+        font-size: 13px;
+    }
+
+    .price {
+        font-size: 15px;
+    }
+
+    .cardbottom button {
+        padding: 8px 14px;
+        font-size: 11px;
+    }
+}
+@media (max-width: 767px) {
+
+    .logo {
+        padding: 10px 0;
+    }
+
+    .logo img {
+        width: 70px;
+        height: 42px;
+    }
+
+    .logo h1 {
+        font-size: 22px;
+    }
+
+    .navbar {
+        gap: 15px;
+        padding: 10px 0;
+    }
+
+    .navbar a {
+        font-size: 16px;
+    }
+
+    .navbar a i {
+        font-size: 16px;
+    }
+
+    .restheader {
+        margin-top: 80px;
+        height: auto;
+        min-height: 500px;
+    }
+
+    .headcontent {
+        flex-direction: column;
+    }
+
+    .headl {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .headl img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .headr {
+        width: 100%;
+        padding: 10px 20px 20px;
+    }
+
+    .headt {
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .headt h1 {
+        font-size: 36px;
+    }
+
+    .bookmarkbtn {
+        width: 36px;
+        height: 36px;
+    }
+
+    .bookmarkbtn img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .desc h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .desc p {
+        font-size: 16px;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .address {
+        position: relative;
+        width: 100%;
+        padding: 15px 20px;
+        top: 0;
+        margin-top: 15px;
+    }
+
+    .address i {
+        font-size: 28px;
+    }
+
+    .addresstxt h2 {
+        font-size: 24px;
+    }
+
+    .addresstxt p {
+        font-size: 16px;
+    }
+
+    .bodycontent {
+        flex-direction: column;
+        padding: 20px 16px;
+        gap: 20px;
+    }
+
+    .filter {
+        width: 100%;
+        padding: 20px 25px;
+    }
+
+    .filter h2 {
+        font-size: 42px;
+        margin-bottom: 30px;
+    }
+
+    .filter h3 {
+        font-size: 26px;
+        margin-top: 20px;
+    }
+
+    .filter label {
+        font-size: 22px;
+    }
+
+    .filter input[type="checkbox"] {
+        width: 25px;
+        height: 25px;
+    }
+
+    .range {
+        font-size: 18px;
+    }
+
+    .filterbtns {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .resetbtn,
+    .applybtn {
+        width: 100%;
+        height: 44px;
+        font-size: 24px;
+    }
+
+    .grid {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 320px;
+        padding: 16px;
+    }
+
+    .card img {
+        height: 180px;
+    }
+
+    .card h3 {
+        font-size: 20px;
+    }
+
+    .tags span {
+        font-size: 10px;
+        padding: 4px 10px;
+    }
+
+    .rating {
+        font-size: 13px;
+    }
+
+    .price {
+        font-size: 16px;
+    }
+
+    .cardbottom button {
+        padding: 9px 16px;
+        font-size: 11px;
+    }
+
+    footer {
+        height: auto;
+        padding-top: 20px;
+    }
+
+    .footcontent {
+        flex-direction: column;
+        gap: 24px;
+        padding: 0 16px 20px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+
+    .footleft,
+    .footmiddle,
+    .footright {
+        width: 100%;
+    }
+
+    .footmiddle {
+        padding-top: 0;
+    }
+
+    .footright {
+        padding-top: 0;
+    }
+
+    .footleft h1 {
+        font-size: 26px;
+    }
+
+    .footleft p {
+        font-size: 18px;
+    }
+
+    .footmiddle a {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .followus {
+        font-size: 20px;
+    }
+
+    .socialicons {
+        justify-content: center;
+    }
+
+    .foothr {
+        margin-top: 10px;
+        bottom: 45px;
+    }
+
+    .copyright {
+        font-size: 12px;
+        padding-bottom: 12px;
+        bottom: 12px;
+    }
+}
+
